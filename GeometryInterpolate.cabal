@@ -1,0 +1,31 @@
+name:                GeometryInterpolate
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/githubuser/GeometryInterpolate#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name here
+maintainer:          example@example.com
+copyright:           2018 Author name here
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+
+library
+  exposed-modules:   Circle
+  hs-source-dirs:    src
+  build-depends:     base >= 4.7 && < 5
+                   , hspec
+  default-language:  Haskell2010
+
+test-suite test-circle
+  main-is:           test-circle.hs
+  hs-source-dirs:    tests
+                   , src
+  type:              exitcode-stdio-1.0
+  build-depends:     base >= 4.7 && < 5
+                   , hspec
+  default-language:  Haskell2010
